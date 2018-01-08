@@ -1,0 +1,611 @@
+@charset "utf-8";
+
+/* Website Background */
+body{
+	background-color: white;
+	margin: 0;
+	background-size: 450px 400px;
+	background-repeat: repeat; /* Background image is repeated so whole page is covered */
+	background-attachment: fixed;
+}
+
+header{
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+#MainLogo{
+	opacity: 1;
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+#MainLogo:hover {
+	opacity: 0.5;
+}
+
+/* Navigation bar */
+nav{
+	text-align: center;
+	display: block;
+	padding: 1px;
+	background-color: black;
+}
+
+/* FadeIn Onload Animation*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Navigation bar CSS */
+ul.navList{
+	list-style-type: none;
+	margin: 15px;
+	padding: 0;
+	font-family: MS Gothic;
+	font-size: 12px;
+}
+
+ul.navList li{
+	display: block;
+	padding: 10px;
+	margin-right: 0px;
+	background-color: black;
+	display: inline;
+	border-right: solid;
+	border-right-color: #88a0aa;
+}
+
+ul.navList li:last-child {
+	border-right: 0px;
+}
+
+#mobile-menu {
+	display: none;
+	width: 32px;
+	height: 32px;
+}
+
+@media screen and (max-width: 480px) { /* If mobile, remove nav bar (replaced with mobile menu) */
+	nav ul.navList, nav:active ul.navList{
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: black;
+		right: 10px;
+		top: 65px;
+		width: 40%;
+		height: 37%;
+		z-index: 200;
+	}
+	
+	nav:hover ul.navList { /* Menu displayed on hover */
+		display: block;
+	}
+	
+	ul.navList li { /* Mobile menu list options */
+		display: block
+		width: 100%;
+		border-right: 0px;
+		margin: 5;
+		font-family: MS Gothic;
+		font-size: 60px;
+		background-color: transparent;
+		text-align: center;
+	}
+	
+	#mobile-menu {
+		display: inline-block;
+	}	
+}
+
+
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: blue;
+}
+
+/* Social media Footer */
+footer#SocialMediaFooter{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+	footer#SocialMediaFooter{
+		display: none;
+	}
+}
+
+.soclogo{ /* Social media icons */
+	opacity: 1;
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 5px;
+}
+.soclogo:hover {
+	opacity: 0.5;
+}
+
+#socialimages{
+	text-align: center;
+}
+
+/* --------------------- */
+/* INDEX CSS STARTS HERE */
+
+
+/*Home Page*/
+section#HomeSection1{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            animation: fadein 2s;
+}	
+.spotifyHome{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	max-width:300;
+	width: 300;
+	height: auto;
+}
+
+/* INDEX CSS ENDS HERE */
+/* --------------------- */
+	
+	
+/* --------------------- */
+/* ABOUT CSS STARTS HERE */	
+	
+/* Who are Enter Shikari */
+#who {
+	border-radius: 25px; /* Rounded corners */
+	border: 2px solid black;
+	text-align: center;
+	padding: 20px;
+	background-color: white;
+	margin: 20px;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            animation: fadein 2s;
+}
+
+p {
+	font-family: MS Gothic;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+/* The Band */
+#theBand {
+	border-radius: 25px; /* Rounded corners */
+	font-family: MS Gothic;
+	text-align: center;
+	padding: 20px;
+	background-color: white;
+}
+
+#theBand img {
+	margin-right: 5px;
+	margin-bottom: 5px;
+	width: auto;
+	height: 250px;
+	border-radius: 25px;
+	box-shadow: 5px 10px black;
+}
+
+#Contact {
+	border-radius: 25px; /* Rounded corners */
+	border: 2px solid black;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            animation: fadein 2s;
+}
+
+#enquire {
+	font-family: MS Gothic;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+#other {
+	font-family: MS Gothic;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+/* ABOUT CSS ENDS HERE */
+/* --------------------- */
+	
+	
+/* --------------------- */
+/* SHOWS CSS STARTS HERE */
+
+
+/*******************/
+/* Show List/Table */
+table#showTable{
+	background-color: #88a0aa;
+	font-family: MS Gothic;
+	font-size: 12px;
+	margin-left: auto;
+    margin-right: auto;
+	border: solid;
+	border-color: black;
+	padding: 10px;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            animation: fadein 2s;
+}
+
+#table-wrapper{
+	position: relative;
+}
+#table-scroll {
+	max-height: 750px;
+	overflow: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+th#dateText{
+	text-align: left;
+}
+th#locationText{
+	text-align: center;
+}
+th#priceText{
+	text-align: right;
+}
+
+td{
+	padding-top: 15px;
+}
+td#priceText{
+	text-align: right;
+}
+td#locationText{
+	text-align: center;
+}
+td#dateText{
+	text-align: left;
+}
+
+/* Buy ticket buttons */
+input[type=button]{
+    font-family: MS Gothic;
+}
+	
+/* SHOWS CSS ENDS HERE */
+/* ------------------- */
+	
+/* --------------------- */
+/* MUSIC CSS STARTS HERE */	
+
+
+/* ALBUM SLIDER STARTS HERE */	
+section#imgSlider{
+	padding-top: 20px;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            animation: fadein 2s;
+}
+.showAlbum {
+    display: none;
+}  
+.showAlbum img {  
+    width: 100%;
+}
+.slidercontainer {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+}
+
+/* Image scroll arrows */
+.left, .right {
+	background-color: black;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 15px;
+    color: white;
+	font-family: MS Gothic;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+	border-radius: 3px 3px 3px 3px;
+}
+.right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.left:hover, .right:hover {
+    background-color: rgba(115, 115, 115, 0.8);
+}
+
+/* Album image */
+.content { /* JS Variable */
+	background-color: black;
+    color: white;
+	font-family: MS Gothic;
+    font-size: 20px;
+    padding-top: 5px;
+	padding-bottom: 5px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+	display: inline;
+}
+.active {
+    background-color: #717171;
+}
+
+/* Fading animations */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;  
+        animation-name: fade;
+        animation-duration: 1s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+  
+@keyframes fade {
+    from {
+            opacity: .4
+    }
+    to {
+            opacity: 1
+    }
+}
+
+/* MUSIC CSS ENDS HERE */
+/* ------------------- */
+
+/* --------------------- */
+/* STORE CSS STARTS HERE */
+
+#toCustomiser {
+	color: white;
+	border: solid;
+	width: auto%;
+	text-align: center;
+	background-color: black;
+	padding: 10px;
+}
+
+#toCustomiser:hover {
+	color: blue;
+}
+
+@media screen and (max-width: 480px) {
+	#toCustomiser{
+		display: none;
+	}
+}
+
+ul.storeProducts { /* List of store products */
+	list-style: none;
+	height:100%;
+	margin-right: 300px;
+}
+.storeProducts li {
+	display:inline;
+	float:left;
+	margin:5px;
+	position:relative;
+}
+.product { /* Store product */
+	display: block;
+	border: solid;
+	border-color: black;
+	background-color: white;
+}
+.product img { /* Product image */
+	border: solid;
+	border-width: 10px;
+	border-color: black;
+	max-width: 250px;
+	max-height: 190px;
+}
+p.productName { /* Bold name of product */
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+p.productPrice { /* Price of product */
+	color: black;
+	text-align: center;
+}
+
+.shopCart { /* Shop cart */
+	background-color: blue;
+	position: fixed;
+	right: 0;
+	top: 160px;
+	bottom: 80px;
+	width: 300px;
+	padding: 0px 10px;
+	border-radius: 25px;
+}
+@media screen and (max-width: 480px) {
+	.shopCart{
+		display: none;
+	}
+}
+table#cartProducts {
+	width: 300px;
+	height: auto;
+}
+#cartHeader { /* 'Cart' */
+	text-align: center;
+}
+#cartHelp { /* 'Drag + Drop to Add to Cart!' */
+	position: absolute;
+	left: 10px;
+	bottom: 20px;
+}
+.cartTotal {
+	margin: 0;
+	text-align: right;
+	padding-right: 20px;
+	margin-top: 10px;
+}
+
+/********** Customizer Page Code *********/
+#drawBody {
+	margin: 0;
+}
+
+.toolbar { /* Tool bar containing canvas controls */
+	display: flex;
+	flex-direction: row;
+	background-color: black;
+	width: 100%;
+	position: absolute;
+	text-align: right;
+}
+
+.toolbar * {
+	margin: 5px 10px;
+}
+
+#custom { /* Canvas ID */
+	display: block;
+	background-image: url("Images/TEE.jpg");
+}
+
+#teeBackground { /* Background Image */
+	background-color: white;
+	margin: 0;
+	background-size: 600px auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+footer#CustomMediaFooter{ /* A custom footer with a border to show user boundaries */
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-top: solid;
+}
+
+#return {
+	color: white;
+	border-bottom: solid;
+	border-color: white;
+}
+	
+/* STORE CSS ENDS HERE */
+/* ------------------- */
+
+
+/* --------------------- */
+/* MEDIA CSS STARTS HERE */
+
+h1 {
+	text-decoration: none;
+	font-family: MS Gothic;
+	font-size: 20px;
+}
+
+.imgGallery {
+	text-align: center;
+	padding-bottom: 25px;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            animation: fadein 2s;
+}
+.imgGallery img {
+	width: 230px;
+	filter: grayscale(100%); /* Thumbnail images displayed in black and white */
+	transition: 1s;
+}
+.imgGallery img:hover {
+	filter: grayscale(0) /* Thumbnail image colours return when mouse is hovered over them */
+}
+
+footer#MediaFooter{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+@media screen and (max-width: 480px) {
+	footer#MediaFooter{
+		display: none;
+	}
+}
+
+/* MEDIA CSS ENDS HERE */
+/* ------------------- */
+
+
+/* --------------------- */
+/* DEMO CSS STARTS HERE */
+
+#demo {
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+
+
