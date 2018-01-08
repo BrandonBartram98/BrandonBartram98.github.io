@@ -125,9 +125,7 @@ footer#SocialMediaFooter{
 	padding-top: 10px;
 }
 
-@media screen 
-and (max-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 480px) {
 	footer#SocialMediaFooter{
 		display: none;
 	}
@@ -429,9 +427,7 @@ section#imgSlider{
 	color: blue;
 }
 
-@media screen 
-and (max-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 480px) {
 	#toCustomiser{
 		display: none;
 	}
@@ -592,9 +588,7 @@ footer#MediaFooter{
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-@media screen 
-and (max-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 480px) {
 	footer#MediaFooter{
 		display: none;
 	}
