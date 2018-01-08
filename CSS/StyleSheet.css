@@ -252,6 +252,15 @@ p {
 	padding-left: 50px;
 }
 
+@media screen and (max-width: 480px) {
+	#theBand img{
+		padding-top: 15px;
+	}
+	#officeMap {
+		max-width: 300px;
+	}
+}
+
 
 /* ABOUT CSS ENDS HERE */
 /* --------------------- */
