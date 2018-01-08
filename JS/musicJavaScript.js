@@ -3,7 +3,7 @@
 //*****************//
 
 //Album Slider
-var album_index = 0;  
+var album_index = 1;  
     displayAlbums(album_index);  
 	
     function nextAlbum(n) //Next Album Function
