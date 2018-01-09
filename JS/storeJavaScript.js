@@ -3,10 +3,6 @@
 var data = {"cartTotal":0,"rows":[]};
 var totalCost = 0;
 
-function clearClick(){
-    localStorage.clear();
-}
-
 $(function()
 {
 	//grid
