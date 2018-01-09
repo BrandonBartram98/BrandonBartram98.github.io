@@ -92,10 +92,10 @@ ul.navList li:last-child { /* Border right is removed from last item is nav list
 	}
 	
 	ul.navList li { /* Mobile menu list options */
-		display: block
+		display: block;
 		width: 100%;
 		border-right: 0px;
-		margin: 5;
+		margin: 5px;
 		font-family: 'VT323', monospace;
 		font-size: 60px;
 		background-color: transparent;
@@ -155,16 +155,15 @@ section#HomeSection1{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+       -moz-animation: fadein 2s; /* Firefox 16 */
             animation: fadein 2s;
 }	
 .spotifyHome{
 	display: block;
 	margin: 0 auto;
 	position: relative;
-	max-width:300;
-	width: 300;
+	max-width: 300px;
+	width: 300px;
 	height: auto;
 }
 
@@ -184,8 +183,7 @@ section#HomeSection1{
 	background-color: white;
 	margin: 20px;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+       -moz-animation: fadein 2s; /* Firefox 16 */
             animation: fadein 2s;
 }
 
@@ -225,12 +223,11 @@ p {
 	margin-right: auto;
 	width: 80%;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+       -moz-animation: fadein 2s; /* Firefox 16 */
             animation: fadein 2s;
 }
 
-#enquire {
+.enquire { /* Enquire Info */
 	font-family: 'Dosis', sans-serif;
 	display: inline-block;
 	margin-left: auto;
@@ -241,7 +238,7 @@ p {
 	padding-left: 50px;
 }
 
-#other {
+.other {
 	font-family: 'Dosis', sans-serif;
 	display: inline-block;
 	margin-left: auto;
@@ -282,8 +279,7 @@ table#showTable{ /* Show table */
 	border-color: black;
 	padding: 10px;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+       -moz-animation: fadein 2s; /* Firefox 16 */
             animation: fadein 2s;
 }
 
@@ -337,8 +333,7 @@ input[type=button]{
 section#imgSlider{ /* Album Slider */
 	padding-top: 20px;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+       -moz-animation: fadein 2s; /* Firefox 16 */
             animation: fadein 2s;
 }
 .showAlbum {
@@ -427,13 +422,12 @@ section#imgSlider{ /* Album Slider */
 #toCustomiser { /* Link to customiser */
 	color: white;
 	border: solid;
-	width: auto%;
+	width: auto;
 	text-align: center;
 	background-color: black;
 	padding: 10px;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+       -moz-animation: fadein 2s; /* Firefox 16 */
             animation: fadein 2s;
 }
 
@@ -451,8 +445,7 @@ section#imgSlider{ /* Album Slider */
 #storeHeaders {
 	text-align: center;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+       -moz-animation: fadein 2s; /* Firefox 16 */
             animation: fadein 2s;
 }
 #map {
@@ -464,8 +457,7 @@ ul.storeProducts { /* List of store products */
 	height:100%;
 	margin-right: 300px;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+       -moz-animation: fadein 2s; /* Firefox 16 */
             animation: fadein 2s;
 }
 .storeProducts li {
@@ -508,8 +500,7 @@ p.productTitle { /* Bold name of product */
 	padding: 0px 10px;
 	border-radius: 25px;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+       -moz-animation: fadein 2s; /* Firefox 16 */
             animation: fadein 2s;
 }
 @media screen and (max-width: 480px) {
@@ -603,8 +594,7 @@ h1 {
 	margin-left: 50px;
 	margin-right: 50px;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+       -moz-animation: fadein 2s; /* Firefox 16 */
             animation: fadein 2s;
 }
 .imgGallery img {
