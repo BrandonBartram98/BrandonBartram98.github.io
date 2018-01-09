@@ -36,41 +36,43 @@ style="width:auto;height:absolute;max-height:35px;padding:5px"></a>
 
 <body>
 
-<div id="customiserLink">
+<div id="customiserLink"> <!-- Link to t-shirt customiser -->
 <a href="customiserPage.html">
 <h1 id="toCustomiser">Click to Customise a Shikari Shirt!</h1>
 </a>
 </div>
+<h1 id="storeHeaders"> UK & Europe Delivery Only! </h1>
+<div id="map"></div>
 
- delivery territory, pricing, seasonal promotions/deals
-  delivery territory, pricing, seasonal promotions/deals
-   delivery territory, pricing, seasonal promotions/deals
+
+<h1 id="storeHeaders"> Winter Sale 20% Off Selected Items! </h1>
    
 <ul class="storeProducts">
 	<li>
-		<a id="productContainer" href="#" class="product">
-		<img src="Images/item1.jpg" alt="item1/>
+		<a href="#" class="product">
+		<img src="Images/item1.jpg" alt="item1"/>
 		<div class="priceHolder">
-		<p class="productName">PRODUCT 1</p>
-		<p class="productPrice">Price:£25</p>
+		<!-- Name of product -->
+		<p class="productTitle" data="15">Black Logo Tee</p> <!-- Data = Price of product -->
+		<p id="productPriceTag">Price: £15</p> <!-- Display price -->
 		</div>
 		</a>
 	</li>
 	<li>
 		<a href="#" class="product">
-		<img id="productImages" src="Images/item2.jpg" alt="item2/>
+		<img id="productImages" src="Images/item2.jpg" alt="item2"/>
 		<div class="priceHolder">
-		<p class="productName">PRODUCT 2</p>
-		<p class="productPrice">Price:£25</p>
+		<p class="productTitle" data="25">Black Logo Crewneck</p>
+		<p id="productPriceTag">Price: £25</p>
 		</div>
 		</a>
 	</li>
 	<li>
 		<a href="#" class="product">
-		<img id="productImages" src="Images/item3.jpg" alt="item3/>
+		<img id="productImages" src="Images/item3.jpg" alt="item3"/>
 		<div class="priceHolder">
-		<p class="productName">PRODUCT 3</p>
-		<p class="productPrice">Price:£25</p>
+		<p class="productTitle" data="30">The Spark Package</p>
+		<p id="productPriceTag">Price: £30</p>
 		</div>
 		</a>
 	</li>
@@ -78,8 +80,35 @@ style="width:auto;height:absolute;max-height:35px;padding:5px"></a>
 		<a href="#" class="product">
 		<img id="productImages" src="Images/item4.png" alt="item4"/>
 		<div class="priceHolder">
-		<p class="productName">PRODUCT 4</p>
-		<p class="productPrice">Price:£25</p>
+		<p class="productTitle" data="15">Flash Flood Vinyl</p>
+		<p id="productPriceTag">Price: £12 (Sale)</p>
+		</div>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="product">
+		<img id="productImages" src="Images/item5.png" alt="item5"/>
+		<div class="priceHolder">
+		<p class="productTitle" data="10">TTTS Logo Shirt</p>
+		<p id="productPriceTag">Price: £10 (Sale)</p>
+		</div>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="product">
+		<img id="productImages" src="Images/item6.jpg" alt="item6"/>
+		<div class="priceHolder">
+		<p class="productTitle" data="25">Black ES Jersey</p>
+		<p id="productPriceTag">Price: £25</p>
+		</div>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="product">
+		<img id="productImages" src="Images/item7.jpg" alt="item7"/>
+		<div class="priceHolder">
+		<p class="productTitle" data="8">ES Logo Mug</p>
+		<p id="productPriceTag">Price: £8 (Sale)</p>
 		</div>
 		</a>
 	</li>
@@ -97,9 +126,9 @@ style="width:auto;height:absolute;max-height:35px;padding:5px"></a>
 	</thead>
 </table>
 <p class="cartTotal">Cart Total: £0</p>
-<h2 id="cartHelp"> Drag + Drop Products </h2>
+<h2 id="cartHelp">Drag + Drop Products</h2>
+<input type="button" value="Clear" onclick="clearClick">
 </div>
-
 
 </body>
 

@@ -9,14 +9,14 @@ body{
 	background-attachment: fixed;
 }
 
-header{
+header{ /* Page headers */
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 100;
 }
 
-#MainLogo{
+#MainLogo{ /* Header logo */
 	opacity: 1;
 	display: block;
 	margin: auto;
@@ -64,11 +64,11 @@ ul.navList li{
 	border-right-color: #88a0aa;
 }
 
-ul.navList li:last-child {
+ul.navList li:last-child { /* Border right is removed from last item is nav list */
 	border-right: 0px;
 }
 
-#mobile-menu {
+#mobile-menu { /* Mobile menu icon */
 	display: none;
 	width: 32px;
 	height: 32px;
@@ -125,7 +125,7 @@ footer#SocialMediaFooter{
 	padding-top: 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) { /* If mobile, hide footer images */
 	footer#SocialMediaFooter{
 		display: none;
 	}
@@ -204,7 +204,7 @@ p {
 	background-color: white;
 }
 
-#theBand img {
+#theBand img { /* Images of band members */
 	margin-right: 5px;
 	margin-bottom: 5px;
 	width: auto;
@@ -213,7 +213,7 @@ p {
 	box-shadow: 5px 10px black;
 }
 
-#Contact {
+#Contact { /* Contact Info */
 	border-radius: 25px; /* Rounded corners */
 	border: 2px solid black;
 	text-align: center;
@@ -272,7 +272,7 @@ p {
 
 /*******************/
 /* Show List/Table */
-table#showTable{
+table#showTable{ /* Show table */
 	background-color: #88a0aa;
 	font-family: MS Gothic;
 	font-size: 12px;
@@ -297,6 +297,7 @@ table#showTable{
 	margin-bottom: 25px;
 }
 
+/* Table contents */
 th#dateText{
 	text-align: left;
 }
@@ -333,7 +334,7 @@ input[type=button]{
 
 
 /* ALBUM SLIDER STARTS HERE */	
-section#imgSlider{
+section#imgSlider{ /* Album Slider */
 	padding-top: 20px;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -399,7 +400,7 @@ section#imgSlider{
         animation-name: fade;
         animation-duration: 1s;
 }
-@-webkit-keyframes fade {
+@-webkit-keyframes fade { /* Fade in effect */
     from {
         opacity: .4
     }
@@ -423,29 +424,49 @@ section#imgSlider{
 /* --------------------- */
 /* STORE CSS STARTS HERE */
 
-#toCustomiser {
+#toCustomiser { /* Link to customiser */
 	color: white;
 	border: solid;
 	width: auto%;
 	text-align: center;
 	background-color: black;
 	padding: 10px;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            animation: fadein 2s;
 }
 
-#toCustomiser:hover {
+#toCustomiser:hover { /* Turn blue on hover */
 	color: blue;
 }
 
 @media screen and (max-width: 480px) {
-	#toCustomiser{
+	#toCustomiser {
 		display: none;
 	}
+}
+
+
+#storeHeaders {
+	text-align: center;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            animation: fadein 2s;
+}
+#map {
+	height: 100%;
 }
 
 ul.storeProducts { /* List of store products */
 	list-style: none;
 	height:100%;
 	margin-right: 300px;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            animation: fadein 2s;
 }
 .storeProducts li {
 	display:inline;
@@ -466,18 +487,19 @@ ul.storeProducts { /* List of store products */
 	max-width: 250px;
 	max-height: 190px;
 }
-p.productName { /* Bold name of product */
+p.productTitle { /* Bold name of product */
 	color: black;
 	font-weight: bold;
 	text-align: center;
 }
-p.productPrice { /* Price of product */
-	color: black;
+
+#productPriceTag{
 	text-align: center;
+	color: black;
 }
 
 .shopCart { /* Shop cart */
-	background-color: blue;
+	background-color: gray;
 	position: fixed;
 	right: 0;
 	top: 160px;
@@ -485,6 +507,10 @@ p.productPrice { /* Price of product */
 	width: 300px;
 	padding: 0px 10px;
 	border-radius: 25px;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            animation: fadein 2s;
 }
 @media screen and (max-width: 480px) {
 	.shopCart{
