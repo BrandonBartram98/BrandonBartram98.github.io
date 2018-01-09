@@ -598,8 +598,11 @@ footer#MediaFooter{
 	padding-top: 10px;
 }
 @media screen and (max-width: 480px) {
-	footer#MediaFooter{
+	footer#MediaFooter{ /* Removed social media footer on mobile */
 		display: none;
+	}
+	.imgGallery img {
+		filter: grayscale(0) /* Greyscale is removed when viewing the page on mobile as hover is not possible */
 	}
 }
 
