@@ -50,8 +50,8 @@ ul.navList{
 	list-style-type: none;
 	margin: 15px;
 	padding: 0;
-	font-family: MS Gothic;
-	font-size: 12px;
+	font-family: 'VT323', monospace;
+	font-size: 14px;
 }
 
 ul.navList li{
@@ -96,7 +96,7 @@ ul.navList li:last-child {
 		width: 100%;
 		border-right: 0px;
 		margin: 5;
-		font-family: MS Gothic;
+		font-family: 'VT323', monospace;
 		font-size: 60px;
 		background-color: transparent;
 		text-align: center;
@@ -190,7 +190,7 @@ section#HomeSection1{
 }
 
 p {
-	font-family: MS Gothic;
+	font-family: 'Dosis', sans-serif;
 	font-size: 15px;
 	text-decoration: none;
 }
@@ -198,7 +198,7 @@ p {
 /* The Band */
 #theBand {
 	border-radius: 25px; /* Rounded corners */
-	font-family: MS Gothic;
+	font-family: 'Dosis', sans-serif;
 	text-align: center;
 	padding: 20px;
 	background-color: white;
@@ -231,7 +231,7 @@ p {
 }
 
 #enquire {
-	font-family: MS Gothic;
+	font-family: 'Dosis', sans-serif;
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
@@ -242,7 +242,7 @@ p {
 }
 
 #other {
-	font-family: MS Gothic;
+	font-family: 'Dosis', sans-serif;
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
@@ -566,7 +566,7 @@ footer#CustomMediaFooter{ /* A custom footer with a border to show user boundari
 
 h1 {
 	text-decoration: none;
-	font-family: MS Gothic;
+	font-family: 'Dosis', sans-serif;
 	font-size: 20px;
 }
 
