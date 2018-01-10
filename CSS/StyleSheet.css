@@ -140,6 +140,19 @@ footer#SocialMediaFooter{
 	text-align: center;
 }
 
+#reportContainer {
+	border-radius: 25px; /* Rounded corners */
+	border: 2px solid black;
+	text-align: center;
+	margin: 20px;
+	background-color: white;
+	padding: 10px;
+}
+
+.reportImages {
+	max-width: 75%;
+}
+
 /* --------------------- */
 /* INDEX CSS STARTS HERE */
 
@@ -159,10 +172,6 @@ section#HomeSection1{
 	max-width: 300px;
 	width: 300px;
 	height: 80px;
-}
-
-iframe {
-	frameborder: 0;
 }
 
 /* INDEX CSS ENDS HERE */
@@ -611,6 +620,7 @@ footer#MediaFooter{
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
+
 @media screen and (max-width: 480px) {
 	.imgGallery img {
 		filter: grayscale(0) /* Greyscale is removed when viewing the page on mobile as hover is not possible */

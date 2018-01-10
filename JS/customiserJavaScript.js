@@ -1,6 +1,6 @@
 //Variables
 var canvas, context;
-var brush = {
+var brush = { // Default attributes
 	x: 0,
 	y: 0,
 	color: "#000000",
@@ -18,8 +18,8 @@ function redraw()
 	for (var i = 0; i < strokes.length; i++) 
 	{
 		var s = strokes[i];
-		context.strokeStyle = s.color;
-		context.lineWidth = s.size;
+		context.strokeStyle = s.color; // Get colour
+		context.lineWidth = s.size; // Get Size
 		context.beginPath();
 		context.moveTo(s.points[0].x, s.points[0].y);
 		for (var j = 0; j < s.points.length; j++) 
@@ -41,7 +41,7 @@ function init ()
 	});
 	context = canvas[0].getContext("2d"); // Get canvas context
 	
-	function mouseEvent (e) 
+	function mouseEvent (e) // Coord
 	{
 		brush.x = e.pageX;
 		brush.y = e.pageY;

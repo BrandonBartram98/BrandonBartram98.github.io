@@ -1,23 +1,23 @@
 //Store Page JavaScript
 
+//Variables
 var data = {"cartTotal":0,"rows":[]};
-var totalCost = 0;
+var totalCost = 0; // Total cost initialized at 0
 
 $(function()
 {
-	//grid
+	// Data grid
 			$('#cartProducts').datagrid({
 				singleSelect:true
 			});
 			
 			// check that the browser understands storage and check for a stored item by its name
-			if(localStorage &&  localStorage.getItem('shopCart'))
+			if(localStorage &&  localStorage.getItem('shopCart')) // Local storage is loaded
 			{
 				console.log(localStorage.getItem('shopCart'));
 				data = JSON.parse(localStorage.getItem('shopCart'));
-				totalCost = parseFloat(localStorage.getItem('cartTotal'));
-				// console log localStorage.getItem('cart') value, you will see a long json string
-				// parse json from stting into an array object
+				totalCost = parseFloat(localStorage.getItem('cartTotal')); // JSON is parsed
+	
   			
 			console.log(data);
 			$('#cartProducts').datagrid('loadData', data);
@@ -46,8 +46,9 @@ $(function()
 			});
 		});
 		
+		// Add product to cart
 		function addProduct(product,price){
-			function add(){
+			function add(){ // When item is added to cart
 				for(var i=0; i<data.cartTotal; i++){
 					var row = data.rows[i];
 					if (row.product == product){
@@ -63,7 +64,7 @@ $(function()
 					price:price
 				});
 			}
-			add();
+			add(); // Add function is called
 			totalCost += price;
 			$('#cartProducts').datagrid('loadData', data);
 			$('div.shopCart .cartTotal').html('Total: £'+totalCost);
@@ -75,5 +76,5 @@ $(function()
 				localStorage.setItem('cartTotal', totalCost);
 			}
 			console.log(JSON.stringify(data)); // JS array is stringified and logged
-			console.log(totalCost);
+			console.log(totalCost); // Log totalCost to console
 		}
