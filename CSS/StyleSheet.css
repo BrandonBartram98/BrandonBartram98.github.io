@@ -83,7 +83,7 @@ ul.navList li:last-child { /* Border right is removed from last item is nav list
 		right: 10px;
 		top: 65px;
 		width: 40%;
-		height: 37%;
+		height: 100%;
 		z-index: 200;
 	}
 	
@@ -125,12 +125,6 @@ footer#SocialMediaFooter{
 	padding-top: 10px;
 }
 
-@media screen and (max-width: 480px) { /* If mobile, hide footer images */
-	footer#SocialMediaFooter{
-		display: none;
-	}
-}
-
 .soclogo{ /* Social media icons */
 	opacity: 1;
 	display: inline;
@@ -164,7 +158,11 @@ section#HomeSection1{
 	position: relative;
 	max-width: 300px;
 	width: 300px;
-	height: auto;
+	height: 80px;
+}
+
+iframe {
+	frameborder: 0;
 }
 
 /* INDEX CSS ENDS HERE */
@@ -294,26 +292,26 @@ table#showTable{ /* Show table */
 }
 
 /* Table contents */
-th#dateText{
+th.dateText{
 	text-align: left;
 }
-th#locationText{
+th.locationText{
 	text-align: center;
 }
-th#priceText{
+th.priceText{
 	text-align: right;
 }
 
 td{
 	padding-top: 15px;
 }
-td#priceText{
+td.priceText{
 	text-align: right;
 }
-td#locationText{
+td.locationText{
 	text-align: center;
 }
-td#dateText{
+td.dateText{
 	text-align: left;
 }
 
@@ -442,7 +440,7 @@ section#imgSlider{ /* Album Slider */
 }
 
 
-#storeHeaders {
+.storeHeaders {
 	text-align: center;
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox 16 */
@@ -485,7 +483,7 @@ p.productTitle { /* Bold name of product */
 	text-align: center;
 }
 
-#productPriceTag{
+.productPriceTag{ /* Shows price of product below image */
 	text-align: center;
 	color: black;
 }
@@ -520,7 +518,7 @@ table#cartProducts {
 	left: 10px;
 	bottom: 20px;
 }
-.cartTotal {
+.cartTotal { /* Text that changes depending on cart contents/price */
 	margin: 0;
 	text-align: right;
 	padding-right: 20px;
@@ -614,9 +612,6 @@ footer#MediaFooter{
 	padding-top: 10px;
 }
 @media screen and (max-width: 480px) {
-	footer#MediaFooter{ /* Removed social media footer on mobile */
-		display: none;
-	}
 	.imgGallery img {
 		filter: grayscale(0) /* Greyscale is removed when viewing the page on mobile as hover is not possible */
 	}
